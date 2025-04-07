@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  .hero {
+    background-image: url('main.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* full screen height */
+    position: relative;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* optional: darkens behind text */
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay p {
+    font-size: 1.5rem;
+  }
+  
