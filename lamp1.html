@@ -1,0 +1,38 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Lamp 1</h1>
+
+      <p>
+       A lamp that caused my first experience with art block.
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="lamp1/Lamp.jpg" alt="Work in progress">
+          <div class="caption">Lots of rasping took place to achieve the curved neck</div>
+        </div>
+
+
+       
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

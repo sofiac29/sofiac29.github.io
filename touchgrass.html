@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+  </head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Touch Grass</h1>
+
+      <p>
+        A closed loop of care between plants and humans. Glove senses plant conductivity -> Human feels haptics -> GSR senses human emotions -> Plant environment changes through lights
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="touchgrass/touchgrass-3.jpg" alt="Work in progress">
+          <div class="caption">Exhibition</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="touchgrass/touchgrass-1.jpg" alt="Final piece">
+          <div class="caption">Top down</div>
+        </div>
+        <div class="gallery-item">
+          <img src="touchgrass/touchgrass-5.jpg" alt="Final piece">
+          <div class="caption">Why we chose these plants</div>
+        </div>
+        <div class="gallery-item">
+          <img src="touchgrass/touchgrass-4.png" alt="Final piece">
+          <div class="caption">Me :)</div>
+        </div>
+        <div class="gallery-item">
+          <img src="touchgrass/touchgrass-2.jpg" alt="Final piece">
+          <div class="caption">Close up of wearable</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

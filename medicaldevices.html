@@ -1,0 +1,53 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Diabetic Insole</h1>
+
+      <p>
+       A project for a medical device design class detailing an insole to offload pressure for diabetic patients through the use of granular jamming and a vacuum pump.
+</a>
+      </p>
+
+      <div class="stacked-gallery">
+  
+        <!-- First two images side-by-side -->
+      
+        <!-- Remaining stacked images -->
+        <div class="gallery-item">
+          <img src="medicaldevices/drawing.png" alt="Final piece">
+          <div class="caption">Assembly sketch</div>
+        </div>
+        <div class="gallery-item">
+          <img src="medicaldevices/assembly.png" alt="Final piece" style="transform: rotate(90deg);" width="50%">
+          <div class="caption">Final assembly</div>
+        </div>
+        <div class="gallery-item">
+          <img src="medicaldevices/close up.png" alt="Final piece">
+          <div class="caption">Prototyped electronics</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="medicaldevices/piezo.png" alt="Final piece">
+          <div class="caption">Piezo version</div>
+        </div>
+
+      
+      </div>
+    </main>
+  </div>
+</body>
+</html>

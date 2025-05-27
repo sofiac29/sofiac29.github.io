@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sofia Eva Chen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   body {
+  background-color: white;
+  background-image: url("main2.png"); /* keep only this here */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* overflow: hidden; REMOVE THIS LINE */
+}
+
+  </style>
+</head>
+<body class="home">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+  </body>
+</html>

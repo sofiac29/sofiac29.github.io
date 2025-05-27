@@ -1,0 +1,44 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Physics Phenomena</h1>
+
+      <p>
+       An experiment with light, fabric, pumps, and water. 
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="fabricwater/fw2.png" alt="fabric water">
+          <div class="caption">Iridescence</div>
+        </div>
+        <div class="gallery-item">
+          <img src="fabricwater/fw3.png" alt="fabric water">
+          <div class="caption">Density</div>
+        </div>
+        <div class="gallery-item">
+          <img src="fabricwater/fw4.png" alt="fabric water">
+          <div class="caption">Color</div>
+        </div>
+
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

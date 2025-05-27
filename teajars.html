@@ -1,0 +1,49 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Tea Jars</h1>
+
+      <p>
+       I wanted to make jars for my tea so I did.
+</a>
+      </p>
+
+      <div class="stacked-gallery">
+  
+        <!-- First two images side-by-side -->
+      
+        <!-- Remaining stacked images -->
+        <div class="gallery-item">
+            <img src="teajars/tj2.jpeg" alt="Final piece">
+            <div class="caption">Finished piece</div>
+          </div>
+          <div class="gallery-item">
+          <img src="teajars/tj1.png" alt="Final piece" width = "50%">
+          <div class="caption">Close up of woodburning</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="teajars/jig.png" alt="Final piece">
+          <div class="caption">Jig I made to cut every piece at specific angles</div>
+        </div>
+
+      
+      </div>
+    </main>
+  </div>
+</body>
+</html>

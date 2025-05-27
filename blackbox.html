@@ -1,0 +1,45 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>BlackBox</h1>
+
+      <p>
+        A student built and run algorithmic gallery. <a href="https://confluxcollective.org/blackboxgallery" style="text-decoration: underline;">
+Full brief here.
+</a>
+      </p>
+
+      <div class="stacked-gallery">
+  
+        <!-- First two images side-by-side -->
+      
+        <!-- Remaining stacked images -->
+        <div class="gallery-item">
+          <img src="blackbox/1.png" alt="Final piece">
+          <div class="caption">Gallery view</div>
+        </div>
+        <div class="gallery-item">
+          <img src="blackbox/2.JPG" alt="Final piece">
+          <div class="caption">In progress</div>
+        </div>
+
+      
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Oh snap! [click clack cloak]</h1>
+
+      <p>
+        A jacket made out of slap bracelets allowing your objects to quickly transform into insulation. 
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="ohsnap/snap1.png" alt="Work in progress" width="50%">
+          <div class="caption">The jacket</div>
+        </div>
+
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="ohsnap/prying1.png" alt="Work in progress" width = "50%">
+            <div class="caption">Prying diagram</div>
+          </div>
+  
+          <div class="gallery-item">
+            <img src="ohsnap/skit5.gif" alt="Work in progress">
+            <div class="caption">How the comb binder works</div>
+          </div>
+  
+        </div>
+        
+       
+
+       
+       
+        <div class="side-by-side">
+        <div class="gallery-item">
+          <img src="ohsnap/snap3.png" alt="Work in progress">
+          <div class="caption">Slap bracelet diagram</div>
+        </div>
+        <div class="gallery-item">
+          <img src="ohsnap/snap4.png" alt="Work in progress" width = "50%">
+          <div class="caption">Jacket drawing</div>
+        </div>
+      </div>
+
+        
+
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="ohsnap/snap5.png" alt="Work in progress" width = "55%">
+            <div class="caption">Open</div>
+          </div>
+        <div class="gallery-item">
+          <img src="ohsnap/snap6.png" alt="Work in progress">
+          <div class="caption">Closed</div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="ohsnap/snap2.png" alt="Work in progress" width = "50%">
+        <div class="caption">Objects</div>
+      </div>
+        
+        
+       
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Computationally Customized Swimsuits</h1>
+
+      <p>
+       An ongoing project exploring representations of comfort within traditional modeling softwares (Clo3d, Grasshopper, and Abaqus) on active garments. (With Self Assembly)
+</a>
+      </p>
+
+      <div class="stacked-gallery">
+  
+        <!-- First two images side-by-side -->
+      
+        <!-- Remaining stacked images -->
+        <div class="gallery-item">
+          <img src="swimsuit/1.png" alt="Final piece">
+          <div class="caption">Grasshopper stress maps before and after activated</div>
+        </div>
+        <div class="gallery-item">
+          <img src="swimsuit/2.png" alt="Final piece">
+          <div class="caption">Clo representation</div>
+        </div>
+
+      
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Self Tailoring Dress</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    /* Custom styles ONLY for this page */
+    .side-by-side {
+      display: flex;
+      flex-wrap: wrap;        /* allows wrapping if too narrow */
+      gap: 10px;              /* spacing between items */
+      justify-content: center;/* center align */
+    }
+
+    .side-by-side .gallery-item {
+      flex: 0 0 auto;         /* prevents stretching */
+      max-width: 200px;       /* control size per item */
+    }
+
+    .gallery-item img {
+      width: 100%;            /* ensures images fill container */
+      height: auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 13px;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .side-by-side {
+        flex-direction: column; /* stack items on small screens */
+        gap: 20px;
+      }
+
+      .side-by-side .gallery-item {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Self Tailoring Dress</h1>
+
+      <p>
+        A collaboration between Self Assembly and Ministry of Supply. I was on the designing, modeling, and simulating side of this project.
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="ministry/1.jpg" alt="Work in progress">
+          <div class="caption">Final Dresses</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="ministry/2.jpg" alt="Work in progress">
+          <div class="caption">Simulations of different transformations</div>
+        </div>
+
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="ministry/dress2Artboard 1.png" alt="Work in progress">
+            <div class="caption"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="ministry/dress3Artboard 1.png" alt="More progress">
+            <div class="caption"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="ministry/dress5Artboard 1.png" alt="More progress">
+            <div class="caption"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="ministry/dress6Artboard 1.png" alt="More progress">
+            <div class="caption"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="ministry/dress7Artboard 1.png" alt="More progress">
+            <div class="caption">Initial guidelines</div>
+          </div>
+          <div class="gallery-item">
+            <img src="ministry/dress8Artboard 1.png" alt="More progress">
+            <div class="caption"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>

@@ -1,0 +1,59 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Souvenirs</h1>
+
+      <p>
+       A technical drawing, a cast of the MIT Chapel, and a spraypaint experiment. 
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="candles/camera.png" alt="Camera">
+          <div class="caption">Camera</div>
+        </div>
+
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="candles/spray-1.png" alt="Work in progress">
+            <div class="caption">Resolutions</div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="candles/spray-2.png" alt="More progress">
+            <div class="caption">Fuzzy</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="candles/candle-1.png" alt="Final piece">
+          <div class="caption">Wax</div>
+        </div>
+        <div class="gallery-item">
+          <img src="candles/candle-4.png" alt="Final piece">
+          <div class="caption">Powder print</div>
+        </div>
+        <div class="gallery-item">
+          <img src="candles/candle-2.png" alt="Final piece">
+          <div class="caption">Concrete</div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

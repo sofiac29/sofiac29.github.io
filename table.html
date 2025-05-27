@@ -1,0 +1,86 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Seat at the Table</h1>
+
+      <p>
+        [Alternative name: Ökning] Tiles that turn into flexible surfaces through locator + spacer + ring mechanism. Allowing your furniture to grow around the people.
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="table/table-1.png" alt="Work in progress" width = "70%">
+          <div class="caption">A table and shelf</div>
+        </div>
+        <div class="gallery-item">
+          <img src="table/table-2.png" alt="Work in progress" width = "70%">
+          <div class="caption">Close up 1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="table/table-3.png" alt="Work in progress" width = "70%">
+          <div class="caption">Close up 2</div>
+        </div>
+          
+     
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="table/an1.gif" alt="Work in progress" width="100%">
+            <div class="caption">Table for one</div>
+          </div>  
+          <div class="gallery-item">
+            <img src="table/an5.gif" alt="Work in progress" width = "100%">
+            <div class="caption">Room for many</div>
+          </div>
+          
+  
+  
+        </div>
+        
+       
+
+       
+       
+    
+  
+        <div class="gallery-item">
+          <img src="table/renderedassembled1.png" alt="Work in progress">
+          <div class="caption">Room for one</div>
+        </div>
+
+        
+
+        <div class="side-by-side">
+          <div class="gallery-item">
+            <img src="table/knoll2.png" alt="Work in progress" width = "100%">
+            <div class="caption">Flatpacked table for two</div>
+          </div>
+          <div class="gallery-item">
+            <img src="table/top1.png" alt="Work in progress" width = "100%">
+            <div class="caption">Flatpacked room for one</div>
+          </div>
+      </div>
+
+      
+        
+       
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

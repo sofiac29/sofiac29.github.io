@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>Kirigami</h1>
+
+      <p>
+        Simulating the out of plane deformation of kirigami cuts in Abaqus. Looking at how deformation varies as angle of cut and thickness of material changes. Used a buckling analysis involving finding the eigenmode. 
+      </p>
+
+      <div class="stacked-gallery">
+        <div class="gallery-item">
+          <img src="kirigami/kirigami.gif" alt="Work in progress">
+          <div class="caption">Stress during deformation</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="kirigami/kirigami-2.png" alt="Work in progress">
+          <div class="caption">First buckling mode vs load applied</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="kirigami/kirigami-1.png" alt="Work in progress">
+          <div class="caption">Different thicknesses</div>
+        </div>
+
+       
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>
