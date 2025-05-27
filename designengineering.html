@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+  </head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+
+    <main class="content">
+      <h1>What is design engineering? </h1>
+
+      <p>
+       To me, design engineering is using engineering tools and techniques and applying them to human centered problems. It means I believe that design has a certain magic in thinking big, but we need engineering to make it happen.
+      </p>
+      <p>
+        To Harvard, it means I'm taking core mechanical engineering classes while adding in a few more design + electrical engineering electives.
+       </p>
+       <p>
+        To my friends, it means that they still ask me what I'm studying every time we catch up. 
+       </p>
+
+     
+    </main>
+  </div>
+</body>
+</html>
