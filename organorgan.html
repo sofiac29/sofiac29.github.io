@@ -9,9 +9,24 @@
   <div class="container">
     <div id="navbar"></div>
     <script>
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('navbar').innerHTML = data);
+          fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    const links = document.querySelectorAll('#navbar a');
+    const currentUrl = window.location.href;
+
+    console.log('Current URL:', currentUrl);  // See current page URL
+    links.forEach(link => {
+      console.log('Comparing:', link.href);  // See each link's href
+      if (link.href === currentUrl) {
+        console.log('Match found:', link.href);
+        link.classList.add('active');
+        console.log(link, 'active class added');
+
+      }
+    });
+  });
     </script>
 
     <main class="content">
