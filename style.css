@@ -55,14 +55,11 @@ a {
 
 /* Glitch hover only for project links */
 .overlay ul li ul li a:hover {
-  animation: glitch-flicker 0.9s infinite;
-  text-shadow:
-    0 0 2px red,
-    0 0 6px cyan,
-    0 0 12px cyan;
+  font-weight: bold;
+  color: black;
 }
 
-@keyframes glitch-flicker {
+/* @keyframes glitch-flicker {
   0%   { transform: translate(0, 0); color: red; font-family: 'Roboto Mono', monospace; }
   10%  { transform: translate(-1px, 1px); color: cyan; font-family: 'Courier New', monospace; }
   20%  { transform: translate(1px, -2px); color: red; font-family: 'Times New Roman', serif; }
@@ -71,7 +68,7 @@ a {
   65%  { transform: translate(-1px, -1px); color: cyan; font-family: 'Times New Roman', serif; }
   80%  { transform: translate(1px, 2px); color: red; font-family: 'Roboto Mono', monospace; }
   100% { transform: translate(0, 0); color: red; font-family: 'Roboto Mono', monospace; }
-}
+} */
 
 /* Main content */
 .content {
