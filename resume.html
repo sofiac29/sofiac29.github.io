@@ -1,0 +1,50 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+  
+  
+<body>
+  <div class="container">
+    <div id="navbar"></div>
+    <script>
+           fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    const links = document.querySelectorAll('#navbar a');
+    const currentUrl = window.location.href;
+
+    console.log('Current URL:', currentUrl);  // See current page URL
+    links.forEach(link => {
+      console.log('Comparing:', link.href);  // See each link's href
+      if (link.href === currentUrl) {
+        console.log('Match found:', link.href);
+        link.classList.add('active');
+        console.log(link, 'active class added');
+
+      }
+    });
+  });
+    </script>
+
+    <main class="content">
+      <h1>Resume</h1>
+      <p>Embedded version of my current resume.</p>
+      <iframe
+        src="resume%20(5).pdf"
+        width="100%"
+        height="900"
+        style="border: 1px solid #ddd;"
+        title="Resume PDF">
+      </iframe>
+      <p>
+        If the PDF does not load, <a href="resume%20(5).pdf" target="_blank" rel="noopener">open it in a new tab</a>.
+      </p>
+    </main>
+  </div>
+</body>
+</html>

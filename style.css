@@ -47,6 +47,48 @@ html, body {
   margin-top: 4px;
 }
 
+/* Click-to-open dropdown groups in navbar */
+.overlay .dropdown-group details > summary {
+  cursor: pointer;
+  list-style: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.overlay .dropdown-group details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.overlay .dropdown-group details > summary::after {
+  content: " \25BE";
+  font-size: 14px;
+  color: #000;
+  -webkit-text-stroke: 0;
+}
+
+.overlay .dropdown-group details[open] > summary::after {
+  content: " \25B4";
+}
+
+.overlay .dropdown-group details > ul {
+  display: none;
+  margin-top: 8px;
+}
+
+.overlay .dropdown-group details[open] > ul {
+  display: block;
+}
+
+.overlay .outline-link {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.overlay .dropdown-group details ul li a {
+  color: #666;
+  -webkit-text-stroke: 0;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -56,7 +98,8 @@ a {
 /* Glitch hover only for project links */
 .overlay ul li ul li a:hover {
   font-weight: bold;
-  color: black;
+  color: #666;
+  -webkit-text-stroke: 0;
 }
 
 /* @keyframes glitch-flicker {
